@@ -5,7 +5,7 @@ const isMobileMenuOpen = ref(false)
 </script>
 
 <template>
-  <header class="fixed top-4 left-0 w-full z-50 flex justify-center px-4">
+  <header class="fixed top-3 left-0 w-full z-50 flex justify-center px-4">
     <nav
       aria-label="Navigasi Utama"
       class="bg-white border border-slate-200 backdrop-blur-sm rounded-full w-full max-w-7xl px-6 py-3 md:py-5 flex items-center justify-between"
@@ -50,7 +50,7 @@ const isMobileMenuOpen = ref(false)
 
       <button
         @click="isMobileMenuOpen = !isMobileMenuOpen"
-        class="lg:hidden text-slate-50 hover:text-slate-100 focus:outline-none relative w-9 h-9 flex items-center justify-center"
+        class="lg:hidden text-slate-900 hover:text-slate-950 focus:outline-none relative w-9 h-9 flex items-center justify-center"
         aria-label="Buka Menu Utama"
       >
         <Transition name="rotate-fade">
