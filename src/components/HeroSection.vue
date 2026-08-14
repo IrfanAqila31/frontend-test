@@ -1,7 +1,7 @@
 <script setup lang="ts"></script>
 
 <template>
-  <section class="pt-40 pb-20 bg-orange-50">
+  <section id="home" class="pt-40 pb-20 bg-orange-50">
     <div class="max-w-7xl mx-auto px-4">
       <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
         <div class="order-2 lg-order-1">
@@ -16,7 +16,7 @@
             2015 dengan pendekatan holistic dengan ilmu pengetahuan.
           </p>
 
-          <p class="text-zinc-600">
+          <p class="text-slate-600">
             Metode kami dirancang khusus untuk mengatasi akar penyebab stres, ketegangan otot, dan
             ketidakseimbangan energi, bukan sekadar meredakan gejala.
           </p>

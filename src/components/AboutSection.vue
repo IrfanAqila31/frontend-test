@@ -8,7 +8,7 @@ const statistics = [
 </script>
 
 <template>
-  <section aria-label="about-heading" class="pt-10 lg:pt-30 pb-20 overflow-hidden bg-orange-50">
+  <section id="about" aria-label="about-heading" class="pt-10 lg:pt-30 pb-20 overflow-hidden bg-orange-50">
     <div class="max-w-7xl mx-auto px-4">
       <div class="grid grid-cols-1 md:grid-cols-2 gap-16 lg:gap-20 items-center">
         <!-- Kiri -->
@@ -19,11 +19,11 @@ const statistics = [
             class="relative rounded-2xl object-cover w-full h-110"
           />
           <figcaption
-            class="absolute -bottom-10 left-5 lg:-left-10 bg-zinc-50 p-5 rounded-xl shadow-[0_15px_40px_-10px_rgba(0,0,0,0.15)] max-w-60 animate-bounce-slow [animation-delay:-2.5s]"
+            class="absolute -bottom-10 left-5 lg:-left-10 bg-slate-50 p-5 rounded-xl shadow-[0_15px_40px_-10px_rgba(0,0,0,0.15)] max-w-60 animate-bounce-slow [animation-delay:-2.5s]"
           >
-            <strong class="block text-2xl font-extrabold text-zinc-900 mb-1">2.400+</strong>
-            <span class="block text-sm font-bold text-zinc-800 mb-2">Klien Terbantu</span>
-            <span class="block text-xs text-zinc-600">
+            <strong class="block text-2xl font-extrabold text-slate-900 mb-1">2.400+</strong>
+            <span class="block text-sm font-bold text-slate-800 mb-2">Klien Terbantu</span>
+            <span class="block text-xs text-slate-600">
               Telah mempercayakan pemulihan kesehatannya kepada kami sejak 2015.</span
             >
           </figcaption>
@@ -31,14 +31,14 @@ const statistics = [
         <!-- Kanan -->
         <article class="flex flex-col">
           <header>
-            <span class="text-zinc-600 font-bold uppercase text-xs md:text-sm mb-3 block"
+            <span class="text-slate-600 font-bold uppercase text-xs md:text-sm mb-3 block"
               >Tentang Kami</span
             >
-            <h1 class="text-3xl md:text-4xl lg:text-5xl font-bold text-zinc-900 mb-5">
+            <h1 class="text-3xl md:text-4xl lg:text-5xl font-bold text-slate-900 mb-5">
               Pendekatan Holistic <br class="hidden lg:block" />Untuk Keseimbangan Tubuh & Pikiran
             </h1>
           </header>
-          <p class="text-base text-zinc-600 mb-8 leading-relaxed max-w-lg">
+          <p class="text-base text-slate-600 mb-8 leading-relaxed max-w-lg">
             Sehat Sejahtera didirikan pada 2015 dengan visi menghadirkan layanan kesehatan holistik
             berkualitas tinggi yang terjangkau bagi masyarakat Jakarta. Kami percaya bahwa kesehatan
             sejati mencakup keseimbangan fisik, mental, dan emosional. <br /><br />

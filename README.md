@@ -1,48 +1,70 @@
-# frontend-test
+# Sehat Sejahtera - Holistic Therapy Landing Page 🌿
 
-This template should help get you started developing with Vue 3 in Vite.
+Sebuah purwarupa *Landing Page* modern dan responsif untuk pusat kesehatan dan terapi holistik. Proyek ini dibangun untuk memenuhi kriteria penilaian **Local Business / Health & Wellness** dengan fokus pada hierarki visual, arsitektur komponen, serta pengalaman pengguna (UX) yang mulus.
 
-## Recommended IDE Setup
+## ✨ Fitur Utama
 
-[VS Code](https://code.visualstudio.com/) + [Vue (Official)](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur).
+- **Desain Responsif 100%**: Tata letak beradaptasi sempurna di layar *Mobile*, *Tablet*, dan *Desktop* menggunakan *Tailwind Grid & Flexbox*.
+- **Navigasi Interaktif**: Menu navigasi yang disesuaikan untuk *mobile* (Hamburger menu dengan animasi mulus).
+- **Smooth Scrolling**: Transisi antar bagian halaman (Beranda, Tentang Kami, Layanan, Testimoni, Kontak) berjalan secara halus.
+- **Formulir Janji Temu**: Formulir yang telah divalidasi dengan HTML5 untuk alur kontak/reservasi yang nyata.
+- **Semantic HTML & Aksesibilitas**: Penggunaan struktur tag seperti `<section>`, `<article>`, `<figure>`, dan atribut aria yang tepat untuk performa SEO dan aksesibilitas *Screen Reader*.
+- **Modern UI/UX**: Dilengkapi dengan mikro-animasi, *hover states*, efek kaca (*backdrop-blur*), dan tipografi berkualitas (Plus Jakarta Sans).
 
-## Recommended Browser Setup
+## 🛠️ Teknologi yang Digunakan
 
-- Chromium-based browsers (Chrome, Edge, Brave, etc.):
-  - [Vue.js devtools](https://chromewebstore.google.com/detail/vuejs-devtools/nhdogjmejiglipccpnnnanhbledajbpd)
-  - [Turn on Custom Object Formatter in Chrome DevTools](http://bit.ly/object-formatters)
-- Firefox:
-  - [Vue.js devtools](https://addons.mozilla.org/en-US/firefox/addon/vue-js-devtools/)
-  - [Turn on Custom Object Formatter in Firefox DevTools](https://fxdx.dev/firefox-devtools-custom-object-formatters/)
+- **Framework**: [Vue 3](https://vuejs.org/) (Composition API & `<script setup>`)
+- **Styling**: [Tailwind CSS v4](https://tailwindcss.com/)
+- **Build Tool**: [Vite](https://vitejs.dev/)
+- **Typography**: [Google Fonts (Plus Jakarta Sans)](https://fonts.google.com/specimen/Plus+Jakarta+Sans)
 
-## Type Support for `.vue` Imports in TS
+## 📂 Struktur Proyek
 
-TypeScript cannot handle type information for `.vue` imports by default, so we replace the `tsc` CLI with `vue-tsc` for type checking. In editors, we need [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) to make the TypeScript language service aware of `.vue` types.
+Proyek ini dibangun dengan pendekatan modular (Berbasis Komponen) agar kode lebih mudah dibaca dan dipelihara.
 
-## Customize configuration
-
-See [Vite Configuration Reference](https://vite.dev/config/).
-
-## Project Setup
-
-```sh
-npm install
+```text
+src/
+├── components/
+│   ├── NavbarComponent.vue      # Navigasi utama (Desktop & Mobile)
+│   ├── HeroSection.vue          # Bagian sapaan awal (Hero)
+│   ├── AboutSection.vue         # Profil singkat & pencapaian (Trust Badges)
+│   ├── ServicesSection.vue      # Menu Layanan (Iterasi Array)
+│   ├── ServicesCard.vue         # Komponen Kartu untuk masing-masing Layanan
+│   ├── TestimoniSection.vue     # Ulasan Klien
+│   ├── ContactSection.vue       # Formulir Reservasi & Janji Temu
+│   └── FooterComponent.vue      # Tautan cepat dan kontak penutup
+├── App.vue                      # Titik kumpul utama komponen (Main Layout)
+└── main.ts                      # Entry point Vue
 ```
 
-### Compile and Hot-Reload for Development
+## 🚀 Panduan Menjalankan Secara Lokal (Local Setup)
 
-```sh
-npm run dev
-```
+1. **Pastikan Node.js sudah terpasang** di sistem Anda.
+2. **Klon (Clone)** repositori ini:
+   ```bash
+   git clone <url-repositori-anda>
+   cd <nama-folder-repositori>
+   ```
+3. **Instal dependensi**:
+   ```bash
+   npm install
+   ```
+4. **Jalankan server pengembangan (Development Server)**:
+   ```bash
+   npm run dev
+   ```
+5. Buka tautan yang muncul di terminal (biasanya `http://localhost:5173`) pada browser Anda.
 
-### Type-Check, Compile and Minify for Production
+## 🌐 Panduan Deployment (Vercel / Netlify)
 
-```sh
-npm run build
-```
+Proyek ini sudah sangat siap untuk di-*deploy* langsung (Ready for Production).
 
-### Lint with [ESLint](https://eslint.org/)
+**Menggunakan Vercel:**
+1. Login ke [Vercel](https://vercel.com).
+2. Buat proyek baru dan impor repositori GitHub Anda.
+3. Vercel akan otomatis mendeteksi konfigurasi **Vite/Vue**.
+4. Biarkan pengaturan *Build Command* menjadi `npm run build` dan *Output Directory* menjadi `dist`.
+5. Klik **Deploy** dan tunggu beberapa detik hingga situs Anda *live*.
 
-```sh
-npm run lint
-```
+---
+*Dibuat untuk keperluan penilaian Web Development Assessment.*
